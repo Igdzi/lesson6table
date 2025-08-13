@@ -1,15 +1,140 @@
 table {
-  width: 100%;
+  height: 678px;
+  width: 669px;
   border: 1px solid #000;
   border-collapse: collapse;
-
+  table-layout: fixed;
 }
 
 td {
   border: 1px solid #000;
+
 }
 
-td {
-  height: 50px;
+.row-1 {
+  height: calc(87 / 678 *100%);
+}
 
+.cell-1 {
+  width: calc(167 / 669 *100%);
+}
+
+.cell-2 {
+  width: calc(256 / 669 *100%);
+}
+
+.cell-3 {
+  width: calc(215 / 669 *100%);
+}
+
+.cell-4 {
+  width: calc(33 / 669 *100%);
+}
+
+.row-2 {
+  height: calc(171 / 678 *100%);
+}
+
+
+.row-3 {
+  height: calc(170 / 678 *100%);
+}
+
+.row-4 {
+  height: calc(83 / 678 *100%);
+}
+
+.row-5 {
+  height: calc(83 / 678 *100%);
+}
+
+.row-6 {
+  height: calc(58 / 678 *100%);
+}
+
+.row-7 {
+  height: calc(30 / 678 *100%);
+}
+
+
+.cell-3 {
+  --target-color: yellow;
+  animation: fill 0.5s forwards;
+}
+
+.cell-2r-3 {
+  --target-color: yellow;
+  animation: fill 0.5s forwards;
+}
+
+.cell-2r-2 {
+  --target-color: rgb(245, 58, 58);
+  animation: fill 0.5s forwards;
+}
+
+.cell-5r-1 {
+  --target-color: yellow;
+  animation: fill 0.5s forwards;
+}
+
+.cell-4r-1 {
+  --target-color: rgb(10, 10, 10);
+  animation: fill 0.5s forwards;
+}
+
+.cell-6r-2 {
+  --target-color: rgb(10, 10, 10);
+  animation: fill 0.5s forwards;
+}
+
+.cell-5r-3 {
+  --target-color: rgb(66, 61, 218);
+  animation: fill 0.5s forwards;
+}
+
+.cell-5r-4 {
+  --target-color: rgb(245, 58, 58);
+  animation: fill 0.5s forwards;
+}
+
+@keyframes fill {
+  from {
+    background-color: white;
+  }
+
+  to {
+    background-color: var(--target-color);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+.delay-4 {
+  animation-delay: 1.2s;
+}
+
+.delay-5 {
+  animation-delay: 1.5s;
+}
+
+.delay-6 {
+  animation-delay: 1.8s;
+}
+
+.delay-7 {
+  animation-delay: 2.1s;
+}
+
+.delay-8 {
+  animation-delay: 2.4s;
 }
